@@ -1,4 +1,4 @@
-package day1;
+package day2;
 
 public class C02_countConsonant {
 

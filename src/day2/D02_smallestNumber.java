@@ -1,24 +1,21 @@
-package day1;
+package day2;
 
 import java.util.Arrays;
 
-public class D01_largestNumber {
+public class D02_smallestNumber {
 
 	
-	// Q: Find the largest number
+	// Q: Find the smallest number
 	
+
 	
-	
-	public  static int findLargestNumber(int[] arr) {
+public  static int findSmallestNumber(int[] arr) {
 		
 		Arrays.sort(arr);  //33,100,272,500,999
 		
-		return arr[arr.length-1];
+		return arr[0];
 		
 	}
-	
-	
-
 	
 	
 	
@@ -30,8 +27,8 @@ public class D01_largestNumber {
 			
 		int arr[]= {272,33,999,100,500};
 		
-		System.out.println(findLargestNumber(arr));
-		
+
+		System.out.println(findSmallestNumber(arr));
 		
 		
 		

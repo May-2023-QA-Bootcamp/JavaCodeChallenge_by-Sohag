@@ -1,4 +1,4 @@
-package day1;
+package day3;
 
 import java.util.Arrays;
 
@@ -8,29 +8,28 @@ public class D01_SmallestNumber_ComparingValue {
 	// Q: Find the smallest number----using nested loop
 	
 	
-	public  static int findLargestNumber(int[] arr) {    //int arr[]= {999,272,33,,100,5000;
-		
-		
+	//producing wrong result
 	
-
+	
+	public  static void findSmallestNumber(int[] arr) {    //int arr[]= {999,272,33,,100,5000;
 		
 		
-		for(int i=0;i<1;i++) {  //outer loop starts here   1st loop----on  index -0
+		int lowestNumber=arr[0];;
+		
+		for(int i=0;i<3;i++) {  //outer loop starts here   1st loop----on  index -0
 			for(int j=i+1;j<arr.length;j++) {  //inner loop starts here
 				if(arr[i]>arr[j]) {
+					lowestNumber=arr[j];
 					
-					return arr[j];	
-				
 			}
 					
 			}
 			
 		}//outer loop ends here
-		return arr[0];
 		
 		
 		
-		
+		System.out.println(lowestNumber);
 		
 	}
 	
@@ -39,9 +38,9 @@ public class D01_SmallestNumber_ComparingValue {
 		
 		//an array having some numbers
 			
-		int arr[]= {272,5,33,999,100,5000,10};
+		int arr[]= {12, 2, 100, 5};
 		
-		System.out.println(findLargestNumber(arr));
+		findSmallestNumber(arr);
 		
 		
 		
