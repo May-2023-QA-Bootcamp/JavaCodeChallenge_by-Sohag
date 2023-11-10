@@ -12,7 +12,7 @@ public class D09_SecondLargestNumber_NestedLoop {
 			int temp=0;
 			
 			for(int i=0;i<arr.length;i++) {//outer loop
-				for(int j=i+1;j<arr.length;j++) {
+				for(int j=i+1;j<arr.length;j++) {//inner loop
 					if(arr[i]>arr[j]) {
 						temp=arr[i];
 						arr[i]=arr[j];
@@ -22,16 +22,11 @@ public class D09_SecondLargestNumber_NestedLoop {
 				}
 			}
 			
-			
+			//How array looks like--after sorting by nested loop
 			System.out.println(Arrays.toString(arr));
-			
+			//pring the 2nd largest number:
 			System.out.println(arr[arr.length-2]);
 			
-			
-			
-			
-			
-
 			
 		}
 

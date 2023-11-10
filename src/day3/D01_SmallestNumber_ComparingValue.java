@@ -8,7 +8,7 @@ public class D01_SmallestNumber_ComparingValue {
 	// Q: Find the smallest number----using nested loop
 	
 	
-	//producing wrong result
+	//producing wrong result---we have solution for this approach
 	
 	
 	public  static void findSmallestNumber(int[] arr) {    //int arr[]= {999,272,33,,100,5000;
