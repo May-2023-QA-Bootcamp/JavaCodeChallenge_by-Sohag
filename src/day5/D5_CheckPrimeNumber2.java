@@ -1,31 +1,34 @@
 package day5;
-
+//q: print all Prime Number from 0 to 50
 public class D5_CheckPrimeNumber2 {
+	//method to check given number is prime or not:
 	public static boolean isPrimeNumber(int n) {
-		if(n<2) {
-			
-			return false;	
+		if (n < 2) {  //skiping if the n value is less than  2
+			return false;
 		}
-		
-		for(int i=2;i<=n/2;i++) {
-			if(n%i==0) {
+		for (int i = 2; i < n; i++) { //checking reminder is 0 or not by using n%i(here i value will be 2 to (n-1)
+			if (n % i == 0) {
 				return false;
 			}
-			
 		}
-		return true;	
+		return true; //if n value does'nt match above both condition then returns true
 	}
-	// witll print all prime numbers
-	public static void printPrimeNumber(int n) {
-		for(int i=0;i<=n;i++) {
-			if(isPrimeNumber(i)) {
-				System.out.println(i);
+
+	// method to print all prime numbers:
+	public static void printPrimeNumber(int number) {
+
+		for (int j = 0; j <= number; j++) {
+			if (isPrimeNumber(j)) {//checking j value is prime number
+				System.out.print(j + " ");
 			}
 		}
 	}
+
 	public static void main(String[] args) {
-		
+		//call the method to print all prime number up to 50
 		printPrimeNumber(50);
+		
+
 	}
 
 }
