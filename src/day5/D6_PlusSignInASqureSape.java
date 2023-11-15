@@ -1,6 +1,6 @@
 package day5;
 
-public class D5_PlusSignInASqureSape {
+public class D6_PlusSignInASqureSape {
 
 	public static void main(String[] args) {
 		int n=19;

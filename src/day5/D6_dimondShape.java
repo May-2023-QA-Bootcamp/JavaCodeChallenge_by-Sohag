@@ -1,6 +1,6 @@
 package day5;
 
-public class D5_dimondShape {
+public class D6_dimondShape {
 
 	public static void main(String[] args) {
 		int n = 10;

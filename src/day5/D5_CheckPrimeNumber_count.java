@@ -1,6 +1,6 @@
 package day5;
 //q: print all Prime Number from 0 to 50
-public class D5_CheckPrimeNumber2 {
+public class D5_CheckPrimeNumber_count {
 	//method to check given number is prime or not:
 	public static boolean isPrimeNumber(int n) {
 		if (n < 2) {  //skiping if the n value is less than  2
@@ -16,12 +16,14 @@ public class D5_CheckPrimeNumber2 {
 
 	// method to print all prime numbers:
 	public static void printPrimeNumber(int number) {
-		
+		int count=0;
 		for (int j = 0; j <= number; j++) {
 			if (isPrimeNumber(j)) {//checking j value is prime number
-				System.out.print(j + " ");
+				//System.out.print(j + " ");
+				count++;
 			}
 		}
+		System.out.println(count);
 	}
 
 	public static void main(String[] args) {
